@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(197, 187, 187);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 270px;
+    /* height: 400px; */
+    /* height: 400px; Bu özelliği kaldırmamızın sebebi otomatik yüksekliğini ayarlaması için. */
+    margin: 10px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.card-image {
+    background-color: aqua;
+    height: 170px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.card-1 {
+    background-image: url("img/card1.jpg");
+}
+
+.card-2 {
+    background-image: url("img/card2.jpg");
+}
+
+.card-3 {
+    background-image: url("img/card3.jpg");
+}
+.card-4 {
+    background-image: url("img/card4.jpg");
+}
+
+.card p {
+    padding: 10px;
+    text-align: justify;
+    text-indent: 15px;
+}
+
+.card a {
+    display: block;
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 20px 50px;
+    /* Yazı ile arasına mesafe koyma kısmı*/
+}
+.card:hover{
+    background-color: rgb(62, 62, 62);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
